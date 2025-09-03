@@ -56,6 +56,122 @@ SLDS uses a 12-column grid system:
     </div>
   </div>
 </div>
+
+### 4. Progress Indicator: Path
+
+The SLDS Path component visually represents the stages in a process, such as a sales opportunity. Use it to guide users through steps and highlight the current stage.
+
+```jsx
+<div className="slds-path-coach">
+  <div className="slds-path">
+    <div className="slds-grid slds-path__track">
+      <div className="slds-grid slds-path__scroller-container">
+        <div className="slds-path__scroller">
+          <div className="slds-path__scroller_inner">
+            <ul
+              className="slds-path__nav"
+              role="listbox"
+              aria-orientation="horizontal"
+            >
+              <li
+                className="slds-path__item slds-is-current"
+                role="presentation"
+              >
+                <a
+                  className="slds-path__link"
+                  id="path-0"
+                  role="option"
+                  tabIndex={0}
+                  aria-selected="true"
+                >
+                  <span className="slds-path__stage">
+                    <span className="slds-assistive-text">Current Stage</span>
+                  </span>
+                  <span className="slds-path__title">Qualification</span>
+                </a>
+              </li>
+              <li
+                className="slds-path__item slds-is-incomplete"
+                role="presentation"
+              >
+                <a
+                  className="slds-path__link"
+                  id="path-1"
+                  role="option"
+                  tabIndex={-1}
+                  aria-selected="false"
+                >
+                  <span className="slds-path__stage">
+                    <span className="slds-assistive-text">Incomplete</span>
+                  </span>
+                  <span className="slds-path__title">Discovery</span>
+                </a>
+              </li>
+              <li
+                className="slds-path__item slds-is-incomplete"
+                role="presentation"
+              >
+                <a
+                  className="slds-path__link"
+                  id="path-2"
+                  role="option"
+                  tabIndex={-1}
+                  aria-selected="false"
+                >
+                  <span className="slds-path__stage">
+                    <span className="slds-assistive-text">Incomplete</span>
+                  </span>
+                  <span className="slds-path__title">Proposal</span>
+                </a>
+              </li>
+              <li
+                className="slds-path__item slds-is-incomplete"
+                role="presentation"
+              >
+                <a
+                  className="slds-path__link"
+                  id="path-3"
+                  role="option"
+                  tabIndex={-1}
+                  aria-selected="false"
+                >
+                  <span className="slds-path__stage">
+                    <span className="slds-assistive-text">Incomplete</span>
+                  </span>
+                  <span className="slds-path__title">Negotiation</span>
+                </a>
+              </li>
+              <li
+                className="slds-path__item slds-is-incomplete"
+                role="presentation"
+              >
+                <a
+                  className="slds-path__link"
+                  id="path-4"
+                  role="option"
+                  tabIndex={-1}
+                  aria-selected="false"
+                >
+                  <span className="slds-path__stage">
+                    <span className="slds-assistive-text">Incomplete</span>
+                  </span>
+                  <span className="slds-path__title">Closed Won</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+**Tips:**
+- Use `slds-is-current` for the active stage.
+- Use `aria-selected` and assistive text for accessibility.
+- Update stages dynamically based on your process.
+- Reference [SLDS Path documentation](https://www.lightningdesignsystem.com/components/path/) for advanced usage.
 ```
 
 ## 🎨 Styling and Theming
