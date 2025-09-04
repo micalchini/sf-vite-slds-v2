@@ -46,7 +46,10 @@
   outline: none;
   box-shadow: 0 0 3px #1589ee;
 }
-
+.react-app-container .slds-progress__marker .slds-assistive-text. {
+  width: 1px !important;
+  height: 1px !important;
+}
 .react-app-container .slds-button_icon {
   width: auto;
   padding: 0.5rem;
