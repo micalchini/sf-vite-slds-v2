@@ -47,6 +47,23 @@
   box-shadow: 0 0 3px #1589ee;
 }
 
+.react-app-container .slds-button_icon {
+  width: auto;
+  height: auto;
+  padding: 0.5rem;
+}
+.react-app-container .slds-assistive-text {
+  position: unset !important;
+  margin: 0 !important;
+  border: 0 !important;
+  padding: 0 !important;
+  width: auto !important;
+  height: auto !important;
+  overflow: auto !important;
+  clip: unset !important;
+  text-transform: none !important;
+  white-space: nowrap !important;
+}
 /* Responsive header adjustments */
 @media (max-width: 768px) {
   .react-app-container .slds-global-header {
